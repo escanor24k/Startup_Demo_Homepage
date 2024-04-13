@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="mobile.css">
+
+    <script src="https://kit.fontawesome.com/abe70be591.js" crossorigin="anonymous"></script>
+
+    <title>Startup Demo Page</title>
+</head>
+<body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const burgerMenu = document.querySelector(".burger-menu");
+            const navList = document.querySelector("nav ul");
+
+            burgerMenu.addEventListener("click", function() {
+                navList.classList.toggle("active");
+            });
+        });
+    </script>
+    <nav>
+        <a href="#home"><div class="logo"></div></a>
+        <div class="burger-menu">
+            <i class="fas fa-bars"></i> <!-- Font Awesome icon for the burger menu -->
+        </div>
+        <ul>
+            <li>
+                <i class="fa-solid fa-circle-info"></i>
+                <a href="#about">About</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-user"></i>
+                <a href="#">Team</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-layer-group"></i>
+                <a href="#">Work</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-dollar-sign"></i>
+                <a href="#">Pricing</a>
+            </li>
+            <li>
+                <i class="fa-solid fa-envelope"></i>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        
+    </nav>
+    <main>
+        <!-- HEADER -->
+        <section id="home" class="head">
+            <div class="headText">
+                <h2>Start something that matters</h2>
+                <p>Stop wasting valuable time with projects that just isn't you.</p>
+                <button>Learn more and start today</button>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section id="about">
+            <h2>About the company</h2>
+            <h3>Key features of our Company</h3>
+            <div class="aboutItems">
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-tv"></i>
+                        <h4>Responsive</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit illum asperiores laboriosam voluptates rem delectus iusto totam eos sequi similique.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-heart"></i>
+                        <h4>Passion</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit illum asperiores laboriosam voluptates rem delectus iusto totam eos sequi similique.</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-gem"></i>
+                        <h4>Design</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit illum asperiores laboriosam voluptates rem delectus iusto totam eos sequi similique.</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-gear"></i>
+                        <h4>Support</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit illum asperiores laboriosam voluptates rem delectus iusto totam eos sequi similique.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- DESIGN -->
+        <section class="design">
+            <div class="designText">
+                <h3>We know design.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, at.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus, at.</p>
+                <button><i class="fa-solid fa-bars-staggered"></i>View our Works</button>
+            </div>
+            <div class="designImage"></div>
+        </section>
+    </main>
+
+    
+</body>
+</html>

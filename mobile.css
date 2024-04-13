@@ -1,0 +1,77 @@
+@media screen and (max-width: 771px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        height: auto;
+        min-height:80px;
+        position: relative;
+    }
+    nav ul {
+        display: none;
+        width: 100%;
+        text-align: right;
+        font-size: 2rem;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: white;
+    }
+    nav ul.active {
+        display: flex;
+        flex-direction: column;
+    }
+    nav ul li {
+        width: 100%;
+        padding: 1rem;
+    }
+    nav ul li:hover {
+        background-color: rgb(223, 223, 223);
+    }
+    nav ul li a {
+        color: black;
+    }
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+    .burger-menu i {
+        font-size: 1.5rem;
+    }
+    .logo{
+        display: none;
+    }
+    #about{
+        height: auto;
+    }
+    .aboutItems > ul{
+        width: 100%;
+        flex-direction: column;
+    }
+    .aboutItems > ul > li{
+        width: 100%;
+        margin: 20px 0;
+    }
+    .headText{
+        padding:20px;
+    }
+    .design{
+        height:auto;
+        flex-wrap: wrap-reverse;
+    }
+    .designImage{
+        width:400px;
+        height:300px;
+    }
+    .designText > button{
+        display: flex;
+        margin: 1rem auto;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 770px) {
+    .burger-menu {
+        display: none;
+    }
+}
