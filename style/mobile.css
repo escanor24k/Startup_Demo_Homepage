@@ -68,7 +68,7 @@
         margin: 1rem auto;
         align-items: center;
     }
-    #team{
+    .cardSection{
         flex-direction: column;
     }
     .card{

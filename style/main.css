@@ -147,11 +147,20 @@ li > i{
     padding: 20px;
 }
 #team{
+    margin: 50px auto;
+}
+.cardSection{
+    width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    margin: 50px auto;
+    margin: 40px auto;
+}
+.teamHead h3{
+    margin:20px auto;
+    font-size: 1.4rem;
+    text-transform: uppercase;
 }
 .card{
     width:20%;
@@ -189,4 +198,8 @@ li > i{
 }
 .card button i{
     padding:0 3px;
+}
+.teamHead{
+    display: flex;
+    flex-direction: column;
 }
